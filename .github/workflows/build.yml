@@ -1,0 +1,38 @@
+name: Sukka Friends
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+          - 13.x
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm set audit false && node -v && npm -v
+    - run: npm i
+    - run: npm run build
+    - run: cp -r src/img dist/img && touch dist/CNAME && echo "friends.skk.moe" > dist/CNAME
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./dist
+      with:
+        username: ${{ secrets.GIT_USERNAME }}
+        useremail: ${{ secrets.GIT_EMAIL }}
