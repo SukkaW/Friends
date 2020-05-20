@@ -146,3 +146,7 @@
   url: https://isteed.cc/
   img: isteed.cc.png
   text: "一个假的博客～"
+"Aiden's World": # 请使用双引号包裹
+  url: https://xn--6n2ao17b.com/ # 你的网站的 URL
+  img: 麻衣.com.jpg # Logo 的文件名
+  text: "人生何处不青山" # Slogan，请使用双引号包裹
