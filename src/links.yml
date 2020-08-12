@@ -192,5 +192,5 @@
   text: "Whisper to the World"
 "初等記憶體":
   url: https://axionl.me/
-  img: axionl.me.png # Logo 的文件名
-  text: " 一個你知道的地方，和一個沒有酒的故事" # Slogan，请使用双引号包裹
+  img: axionl.me.svg
+  text: " 一個你知道的地方，和一個沒有酒的故事"
