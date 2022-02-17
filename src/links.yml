@@ -234,3 +234,7 @@
   url: https://blog.icecode.xyz
   img: blog.icecode.xyz.png
   text: "漩渦裏的人，有責任說出漩渦的樣子"
+"朱文龙的自留地": # 请使用双引号包裹
+  url: https://www.zhuwenlong.com # 你的网站的 URL
+  img: zhuwenlong.com.png # Logo 的文件名
+  text: "Hi There, I am Mofei!" # Slogan，请使用双引号包裹
