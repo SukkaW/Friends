@@ -39,18 +39,18 @@
     - 非强制，你可以自己选择想要展示的文字哒
   - Logo
     - Favicon：
-      - [`32x32`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/favicon/favicon-32x32.png)
-      - [`192x192`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/favicon/android-chrome-192x192.png)
-      - [`512x512`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/favicon/android-chrome-512x512.png)
-      - [svg](https://cdn.jsdelivr.net/npm/skx@0.2.3/favicon/safari-pinned-tab.svg)
+      - [`32x32`, png](https://cdn.skk.moe/favicon/favicon-32x32.png)
+      - [`192x192`, png](https://cdn.skk.moe/favicon/android-chrome-192x192.png)
+      - [`512x512`, png](https://cdn.skk.moe/favicon/android-chrome-512x512.png)
+      - [svg](https://cdn.skk.moe/favicon/safari-pinned-tab.svg)
     - 头像：
-      - [`36x36`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/avatar/36x36.png)
-      - [`96x96`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/avatar/96x96.png)
-      - [`144x144`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/avatar/144x144.png)
-      - [`192x192`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/avatar/192x192.png)
-      - [`512x512`, png](https://cdn.jsdelivr.net/npm/skx@0.2.3/avatar/512x512.png)
+      - [`36x36`, png](https://cdn.skk.moe/avatar/36x36.png)
+      - [`96x96`, png](https://cdn.skk.moe/avatar/96x96.png)
+      - [`144x144`, png](https://cdn.skk.moe/avatar/144x144.png)
+      - [`192x192`, png](https://cdn.skk.moe/avatar/192x192.png)
+      - [`512x512`, png](https://cdn.skk.moe/avatar/512x512.png)
     - 根据自己的友链页面风格和样式、从上面的图中任选一个啦。当然如果你的友链页面没有放图片的地方、就不用管 Logo 了，没关系的说~
-  - [Banner](https://cdn.jsdelivr.net/npm/skx@0.2.3/img/banner.png)
+  - [Banner](https://cdn.skk.moe/img/banner.png)
     - 如果你的友链页面是卡片式、且支持自定义背景的话，可以用这幅 Banner。
 
 - 准备一个自己站点的 Logo
