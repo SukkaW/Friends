@@ -80,4 +80,4 @@
       text: "Hello, World" # Slogan，请使用双引号包裹
 
 - 完成上述步骤后，请新建一个 Pull Request。
-- 当 Pull Request 被 Review 并被通过、合并后，你的网站将会在 12 个小时内显示在 [苏卡卡的友链页面](https://blog.skk.moe/links/)。
+- 当 Pull Request 被 Review 并被通过、合并后，你的网站将会在 12 个小时内显示在 [苏卡卡的友链页面](https://skk.moe/friends/)。
