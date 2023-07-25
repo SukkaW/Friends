@@ -210,10 +210,10 @@
   url: https://7in0.me/
   img: 7in0.me.png
   text: "永遠的十七歲"
-"宝硕博客":
-  url: https://blog.baoshuo.ren
-  img: blog.baoshuo.ren.svg
-  text: "学习，就是发现自己越来越菜的过程。"
+"宝硕":
+  url: https://baoshuo.ren
+  img: baoshuo.ren.png
+  text: "即使是沉重的过去，也要接受它再继续向前迈进。"
 "Cyris":
   url: https://cyris.moe
   img: cyris.moe.png
@@ -262,6 +262,10 @@
   url: https://roy.wang
   img: roy.wang.png
   text: "知善恶，懂因果"
+"冷曦的喵喵小屋":
+  url: https://hiyase.github.io/
+  img: hiyase.github.io
+  text: "愿每个人都被温柔以待"
 "Tony He":
   url: https://www.ouorz.com
   img: "ouorz.com.jpg"
