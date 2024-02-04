@@ -1,17 +1,27 @@
 {
   "name": "friends",
   "version": "0.0.0",
-  "description": "",
-  "scripts": {
-    "build": "node index.js"
-  },
   "private": true,
+  "description": "",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SukkaW/Friends.git"
   },
+  "scripts": {
+    "build": "bun run index.ts",
+    "lint": "eslint --format=sukka ."
+  },
   "license": "ISC",
   "dependencies": {
     "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@eslint-sukka/ts": "^5.0.0",
+    "@types/bun": "^1.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "eslint": "^8.56.0",
+    "eslint-config-sukka": "^5.0.0",
+    "eslint-formatter-sukka": "^5.0.0",
+    "typescript": "^5.3.3"
   }
 }

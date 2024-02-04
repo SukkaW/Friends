@@ -9,30 +9,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version:
-          - 13.x
-
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         persist-credentials: false
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: oven-sh/setup-bun@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm set audit false && node -v && npm -v
-    - run: npm i
-    - run: npm run build
-    - run: cp -r src/img dist/img && touch dist/CNAME && echo "friends.skk.moe" > dist/CNAME
+        bun-version: latest
+    - run: bun i
+    - run: bun run build
+    - run: cp -r src/img dist/img
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        username: ${{ secrets.GIT_USERNAME }}
-        useremail: ${{ secrets.GIT_EMAIL }}
+        personal_token: ${{ secrets.ACCESS_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: ./dist
+        user_name: ${{ secrets.GIT_USERNAME }}
+        user_email: ${{ secrets.GIT_EMAIL }}
+        cname: friends.skk.moe
