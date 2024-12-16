@@ -10,28 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        persist-credentials: false
-    - uses: pnpm/action-setup@v4
-      name: Install pnpm
-      with:
-        run_install: false
-    - name: Use Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version-file: '.node-version'
-        cache: 'pnpm'
-    - run: pnpm i
-    - run: pnpm run build
-    - run: cp -r src/img dist/img
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        personal_token: ${{ secrets.ACCESS_TOKEN }}
-        publish_branch: gh-pages
-        publish_dir: ./dist
-        user_name: ${{ secrets.GIT_USERNAME }}
-        user_email: ${{ secrets.GIT_EMAIL }}
-        cname: friends.skk.moe
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          run_install: false
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+      - run: pnpm i
+      - run: pnpm run build
+      - run: cp -r src/img dist/img
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=sukka-friends --commit-dirty=true --branch=main
+          wranglerVersion: latest
