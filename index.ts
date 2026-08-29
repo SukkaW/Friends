@@ -1,5 +1,5 @@
 import yaml from 'js-yaml';
-import fs from 'fs';
+import fs from 'node:fs';
 import { fastStringArrayJoin } from 'foxts/fast-string-array-join';
 import { newQueue } from '@henrygd/queue';
 import { asyncRetry } from 'foxts/async-retry';
@@ -42,6 +42,9 @@ const topUserAgentsPromise = fetch('https://cdn.jsdelivr.net/npm/top-user-agents
       '  Cache-Control: public, max-age=300, stale-while-revalidate=60',
       '/img/*',
       '  Cache-Control: public, max-age=86400, stale-while-revalidate=3600',
+    ], '\n') + '\n');
+    fs.writeFileSync('./dist/_redirects', fastStringArrayJoin([
+      '/ https://skk.moe/friends/ 302',
     ], '\n') + '\n');
   } catch (e) {
     console.error(e);
