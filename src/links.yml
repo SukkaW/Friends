@@ -2,10 +2,10 @@
   url: https://blog.cn47mp.moe/
   img: "blog.cn47mp.moe.png"
   text: "日々精進。"
-"Balthild's blog":
-  url: https://qaq.cat/
-  img: "qaq.cat.jpg"
-  text: "是超级大佬超级可爱的霜叶酱~"
+# "Balthild's blog":
+#   url: https://qaq.cat/
+#   img: "qaq.cat.jpg"
+#   text: "是超级大佬超级可爱的霜叶酱~"
 "烧饼博客":
   url: https://u.sb/
   img: "u.sb.png"
@@ -14,10 +14,10 @@
   url: https://yiheng.moe
   img: "yiheng.moe.png"
   text: "可爱的 yiheng"
-"Moeclue~":
-  url: https://moeclue.com
-  img: "moeclue.com.jpg"
-  text: "Update does not exist"
+# "Moeclue~":
+#   url: https://moeclue.com
+#   img: "moeclue.com.jpg"
+#   text: "Update does not exist"
 "零件's Blog":
   url: https://nekosc.com
   img: "nekosc.com.jpg"
@@ -74,14 +74,14 @@
   url: https://ephen.me
   img: ephen.me.jpg
   text: "奇葩一朵， IT 废材"
-"Anankke's Blog":
-  url: https://blog.anank.ke/
-  img: blog.anank.ke.jpg
-  text: "Anankke 的自言自语"
-"Justf Tech Channel":
-  url: https://channel.justf.space/
-  img: "tech.justf.space.jpg"
-  text: "重要的东西, 要拿出像样的时间对待"
+# "Anankke's Blog":
+#   url: https://blog.anank.ke/
+#   img: blog.anank.ke.jpg
+#   text: "Anankke 的自言自语"
+# "Justf Tech Channel":
+#   url: https://channel.justf.space/
+#   img: "tech.justf.space.jpg"
+#   text: "重要的东西, 要拿出像样的时间对待"
 "黄蜂说":
   url: https://www.sjy.im
   img: www.sjy.im.png
