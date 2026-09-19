@@ -48,7 +48,6 @@ jobs:
           name: build-artifact-${{ github.sha }}-${{ github.run_number }}
           path: dist
       - uses: geekyeggo/delete-artifact@v6
-        background: true
         with:
           name: build-artifact-${{ github.sha }}-${{ github.run_number }}
       - uses: cloudflare/wrangler-action@v3
