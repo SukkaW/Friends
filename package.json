@@ -16,19 +16,19 @@
     "@henrygd/queue": "^1.2.0",
     "domain-alive": "^0.1.25",
     "foxts": "^5.9.1",
-    "js-yaml": "^5.4.0",
-    "valibot": "^1.4.2"
+    "js-yaml": "^5.5.0",
+    "valibot": "^1.5.0"
   },
   "devDependencies": {
-    "@eslint-sukka/yaml": "^9.0.1",
+    "@eslint-sukka/yaml": "^9.2.1",
     "@swc-node/register": "^1.12.1",
-    "@swc/core": "^1.16.1",
+    "@swc/core": "^1.16.22",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.13.3",
-    "eslint": "^10.9.1",
-    "eslint-config-sukka": "^9.0.1",
-    "eslint-formatter-sukka": "^9.0.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.14.0",
+    "eslint-config-sukka": "^9.2.1",
+    "eslint-formatter-sukka": "^9.2.1",
     "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@11.28.11"
 }
